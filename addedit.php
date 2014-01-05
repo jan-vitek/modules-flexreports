@@ -210,7 +210,7 @@ function copyForm(form, to, fields) {
 					case 'select-one':
 					case 'select-multiple':
 					// Return selected option value
-						if ( elem.id == 'list' ) {
+						if ( elem.id == 'list' || elem.id == 'selected_field1' ) {
 							var temp = new Array();
 							var count = 0 ;
 							for (var k = 0; k < elem.options.length; k++) {
